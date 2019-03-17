@@ -22,7 +22,8 @@
   window.requestAnimationFrame = requestAnimationFrame;
 
   img.crossOrigin = "Anonymous";
-  img.src = 'https://zupra.github.io/test/filter.jpg';
+  // img.src = 'https://zupra.github.io/test/filter.jpg';
+  img.src = 'js/Background.png';
   img.onload = function() {
     init();
     glitchAnimation();
