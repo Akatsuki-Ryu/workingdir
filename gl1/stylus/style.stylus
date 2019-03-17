@@ -1,0 +1,26 @@
+body
+  margin 0
+  background #373537
+  height 100vh
+  overflow hidden
+
+.glitch-image
+  animation: flick 80ms linear infinite
+  #canvas
+    height 100vh
+    
+    transform: rotateX(90deg)
+    animation: turnOn 100ms ease-in 500ms forwards
+@keyframes
+  0%
+    opacity: .8
+  100%
+    opacity: .9
+@keyframes
+  0%
+    transform: rotateX(90deg)
+    filter: brightness(5)
+  100%
+    transform: rotateX(0)
+    filter: brightness(1)
+

@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: #373537;
+  height: 100vh;
+  overflow: hidden;
+}
+.glitch-image {
+  -webkit-animation: flick 80ms linear infinite;
+          animation: flick 80ms linear infinite;
+}
+.glitch-image #canvas {
+  height: 100vh;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-animation: turnOn 100ms ease-in 500ms forwards;
+          animation: turnOn 100ms ease-in 500ms forwards;
+}
+@-webkit-keyframes  {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes  {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@-webkit-keyframes  {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: brightness(5);
+            filter: brightness(5);
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
+@keyframes  {
+  0% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+    -webkit-filter: brightness(5);
+            filter: brightness(5);
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-filter: brightness(1);
+            filter: brightness(1);
+  }
+}
